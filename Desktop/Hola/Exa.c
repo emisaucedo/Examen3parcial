@@ -12,12 +12,12 @@ void timer0()
 {
 contadorseg++;
 }
-    SET_TIMER0(3036);
+    SET_TIMER0(6);
 }
 void main()
 {
 setup_timer_0(RTCC_INTERNAL | RTCC_DIV_16); 
-SET_TIMER0(3036);
+SET_TIMER0(6);
 enable_interrupts(INT_TIMER0);
 enable_interrupts(GLOBAL);
 printf("Bienvenido!");
