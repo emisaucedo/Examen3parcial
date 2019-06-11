@@ -3,10 +3,15 @@
 #fuses XT, NOMCLR
 #use delay(clock=40M)
 int16 contador=0;
+int contadorseg=0;
 #int_timer0
 void timer0()
 {
     contador++;
+    if(contador==10)
+{
+contadorseg++;
+}
     SET_TIMER0(3036);
 }
 void main()
