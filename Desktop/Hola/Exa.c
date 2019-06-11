@@ -15,9 +15,11 @@ setup_timer_0(RTCC_INTERNAL | RTCC_DIV_16);
 SET_TIMER0(3036);
 enable_interrupts(INT_TIMER0);
 enable_interrupts(GLOBAL);
+printf("Bienvenido!");
     while(true)
     {
-        
+        system("CLS");
     }
     
 }
+
